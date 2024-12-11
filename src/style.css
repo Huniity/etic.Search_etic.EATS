@@ -226,6 +226,9 @@ nav a:hover{
     padding-right: 40px;
     color:#fff;
     border: 1px solid black;
+    background-position: 0px 0px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
   }
   .input-search::placeholder{
     color:rgba(255,255,255,.5);
@@ -266,3 +269,13 @@ nav a:hover{
 
 }
 
+footer {
+    position: relative;
+    z-index: 10;  /* Adjust the value if needed */
+    padding-top: 600px;
+}
+
+.error{
+    position: relative;
+    padding-top: 200px
+}
