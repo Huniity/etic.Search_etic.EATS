@@ -1,14 +1,33 @@
+@media (min-width: 200px) and (max-width: 2400px){
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+.geologica-Geologica> {
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "CRSV" 0,
+      "SHRP" 0;
+  }
+
 body{ 
-    font-family: 'Poppins';
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
     text-align: center;
 }
 
 h1{
     color: rgb(0, 0, 0);
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
 }
 
 h2{
     color: black;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
 }
 
 *{
@@ -23,7 +42,7 @@ h2{
 
 .resize-img {
     height: 90px;
-    width: auto; /* Ajustez selon votre image */
+    width: auto;
     object-fit: cover;
 }
 
@@ -52,7 +71,8 @@ header{
 .logo a{
     text-decoration: none;
     font-size: 30px;
-    font-family: 'Pacifico';
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
     color: rgb(0, 0, 0);
     letter-spacing: 4px;
 }
@@ -64,18 +84,18 @@ nav{
 
 nav a{
     text-decoration: none;
-    font-family: 'Poppins';
+    font-family: 'Geologica', sans-serif;
     letter-spacing: 4px;
     font-size: 20px;
     color: rgb(0, 0, 0);
     padding: 36px 10px;
     margin: 0 1px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 nav a:hover{
     background: rgba(255, 255, 255, 0.19);
-    color: rgb(0, 0, 0);
+    color: rgb(21,236,163);
 }
 
 .banner-area{
@@ -103,12 +123,14 @@ nav a:hover{
 .banner-area h2{
     padding-top: 8%;
     font-size: 80px;
-    color: rgb(0, 0, 0);
+    color: rgb(21,236,163);
+    -webkit-text-fill-color: rgb(21,236,163);
+    -webkit-text-stroke: 1px black;
 }
 
 .content-area {
     width: 100%;
-    height: 1500px;
+    height: 2000px;
     position: relative;
     background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.414) 1%, rgba(255, 255, 255, 0.578) 2%, rgba(255, 255, 255, 0.803) 3%, rgb(255, 255, 255) 4%);
     top: 700px;
@@ -151,23 +173,23 @@ nav a:hover{
     position: relative;
     top: 30px;
     columns: 3;
-    column-gap: 80px;   
+    column-gap: 10px;   
 }
 
 .resize-rest {
-    height: 270px;
+    height: 350px;
     width: auto;
     object-fit: cover;
 }
 
 .resize-bank {
-    height: 270px;
+    height: 350px;
     width: auto;
     object-fit: cover;
 }
 
 .resize-food {
-    height: 270px;
+    height: 350px;
     width: auto;
     object-fit: cover;
 }
@@ -175,4 +197,72 @@ nav a:hover{
 .find_etic{
     text-align: left;
     padding-top: 230px;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
 }
+
+
+/* ---------------------------------------------------- */
+
+*{
+    box-sizing: border-box;
+  }
+
+  .search-box{
+    float: center;
+    position: relative;
+  }
+  .input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: rgb(21,236,163);
+    padding-right: 40px;
+    color:#fff;
+    border: 1px solid black;
+  }
+  .input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    width: 50px;
+    height: 100px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+
+}
+
