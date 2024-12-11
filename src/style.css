@@ -1,15 +1,178 @@
-body{
-    background:url(images/bg2.jpg) no-repeat center center;
-    float:left;
-    width:100%;
-    margin:0 0 0 0;
-    padding:300px 0 220px 0;
-    background-size: cover;
-	position: relative;
-	z-index: 1;
-    
+body{ 
+    font-family: 'Poppins';
+    text-align: center;
 }
 
 h1{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 90%;
+    height: 00 auto;
+}
+
+.resize-img {
+    height: 90px;
+    width: auto; /* Ajustez selon votre image */
+    object-fit: cover;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background: rgb(255, 255, 255);
+    position: fixed;
+}
+
+.logo{
+    float: left;
+    text-align: left;
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: white;
+    top: -45px;
+    left: 50px;
+    position: fixed;
+    height: 195px;
+    width: 50px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Pacifico';
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+}
+
+nav{
+    float: right;
+    line-height: 60px;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    letter-spacing: 4px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 36px 10px;
+    margin: 0 1px;
+    font-weight: 500;
+}
+
+nav a:hover{
+    background: rgba(255, 255, 255, 0.19);
+    color: rgb(0, 0, 0);
+}
+
+.banner-area{
+    background-image:url(images/bg4.jpg);
+    background-size: cover;
+    background-position:  center bottom;
+    top: 60px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+.banner-area:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to top, rgba(255,255,255,0) 98%,rgba(255, 255, 255, 0.641) 99%, rgb(255, 255, 255) 100%);
+}
+
+.banner-area h2{
+    padding-top: 8%;
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+}
+
+.content-area {
+    width: 100%;
+    height: 1500px;
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.414) 1%, rgba(255, 255, 255, 0.578) 2%, rgba(255, 255, 255, 0.803) 3%, rgb(255, 255, 255) 4%);
+    top: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.content-area h2{
+    font-size: 40px;
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+.content-area p{
+    padding: 15px 10%;
+    line-height: 20px;
+    text-align: center;
+}
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    margin-top: 0px;
+    height: 40%;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.text_columns{
+    position: relative;
+    top: 30px;
+    columns: 3;
+    column-gap: 80px;   
+}
+
+.resize-rest {
+    height: 270px;
+    width: auto;
+    object-fit: cover;
+}
+
+.resize-bank {
+    height: 270px;
+    width: auto;
+    object-fit: cover;
+}
+
+.resize-food {
+    height: 270px;
+    width: auto;
+    object-fit: cover;
+}
+
+.find_etic{
+    text-align: left;
+    padding-top: 230px;
 }
