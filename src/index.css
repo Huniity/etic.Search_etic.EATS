@@ -1,0 +1,300 @@
+/* Estilo geral para a página */
+body {
+  font-family: 'Arial', sans-serif;  /* Usando uma fonte nativa */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column; /* Organiza os itens verticalmente */
+  align-items: center;    /* Centraliza os itens horizontalmente */
+  justify-content: flex-start; /* Alterar itens verticalmente */
+  height: 100vh;           /* Usar 100% da altura da viewport */
+}
+
+/* Estilo para o container do título */
+#title-container {
+  text-align: center;    /* Centraliza o título */
+  margin-top: 50px;       /* Distância do topo para o título */
+  margin-bottom: 20px;    /* Espaço entre o título e o formulário */
+}
+
+/* Estilo para o título (h1) */
+h1 {
+  font-size: 64px;           /* Tamanho grande para o título */
+  margin: 0;
+  font-weight: 700;          /* Peso da fonte em negrito */
+}
+
+/* Estilo para cada letra de "ETIC" */
+.etic {
+  font-size: 80px;           /* Tamanho maior para o "ETIC" */
+  font-weight: bold;         /* Deixa o texto em negrito */
+}
+
+/* Cores específicas para cada letra */
+.etic.e {
+  color: #FF0000; /* Vermelho */
+}
+
+.etic.t {
+  color: #FF9900; /* Laranja */
+}
+
+.etic.i {
+  color: #00B140; /* Verde */
+}
+
+.etic.c {
+  color: #1A73E8; /* Azul */
+}
+
+/* Estilo para o "Search Engine" */
+.search-engine {
+  font-size: 32px;        /* Tamanho menor para "Search Engine" */
+  color: #b0b0b0;         /* Cor cinza claro */
+  font-weight: 400;       /* Peso normal para o "Search Engine" */
+  display: block;         /* Faz com que "Search Engine" apareça abaixo de "ETIC" */
+  margin-top: 5px;       /* Espaço entre "ETIC" e "Search Engine" */
+}
+
+/* Estilo para o container do botão de busca */
+#app-cover {
+  margin-top: 40px;       /* Espaço do botão de busca em relação ao título */
+  display: flex;
+  flex-direction: column; /* Organização vertical */
+  align-items: center;    /* Centraliza o botão de busca */
+}
+
+
+
+/* Estilos para o search button */
+
+* {
+    outline: none;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    min-height: 100%;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  body,
+  input {
+    cursor: url(http://k003.kiwi6.com/hotlink/vp054ir5gt/c1.png) 32 32, auto;
+    cursor: -webkit-image-set(url(http://k003.kiwi6.com/hotlink/vp054ir5gt/c1.png) 1x, url(http://k003.kiwi6.com/hotlink/z6fy599487/c2.png) 2x) 32 32, auto;
+  }
+  
+  body:active,
+  input:active {
+    cursor: url(http://k003.kiwi6.com/hotlink/3p6w4icbzt/c1a.png) 32 32, auto;
+    cursor: -webkit-image-set(url(http://k003.kiwi6.com/hotlink/3p6w4icbzt/c1a.png) 1x, url(http://k003.kiwi6.com/hotlink/6ma7828al1/c2a.png) 2x) 32 32, auto;
+  }
+  
+  #app-cover {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 434px;
+    margin: -41px auto 0 auto;
+  }
+  
+  #app {
+    position: relative;
+    width: 82px;
+    height: 82px;
+    border-radius: 120px;
+    margin: 0 auto;
+    transition: 0.15s ease width;
+    z-index: 2;
+  }
+  
+  form {
+    position: relative;
+    height: 82px;
+    cursor: auto;
+    border-radius: 120px;
+  }
+  
+  #f-element {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: 120px;
+  }
+  
+  #inp-cover {
+    position: absolute;
+    top: 0;
+    right: 41px;
+    bottom: 0;
+    left: 0;
+    padding: 0 35px;
+    background-color: #fff;
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #050505;
+    border: 0;
+    padding: 30px 0;
+    margin: 0;
+    margin-top: 52px;
+    line-height: 1;
+    background-color: transparent;
+    transition: 0.15s ease margin-top;
+    cursor: auto;
+  }
+  
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 82px;
+    height: 82px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1;
+    padding: 26px;
+    margin: 0;
+    border: 0;
+    background-color: #373d3f;
+    transition: 0.2s ease background-color;
+    border-radius: 50%;
+  }
+  
+  button.shadow {
+    box-shadow: 0 10px 30px #d0d0d0;
+  }
+  
+  button i.fas {
+    display: block;
+    line-height: 1;
+  }
+  
+  #layer {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #373d3f;
+    transition: 0.9s ease all;
+    z-index: 1;
+  }
+  
+  #layer.sl {
+    transition: 0.3s ease all;
+  }
+  
+  #layer,
+  #init {
+    position: fixed;
+    top: 50%;
+    margin: -40px auto 0 auto;
+  }
+  
+  #layer {
+    right: -100px;
+    left: -100px;
+  }
+  
+  #init {
+    right: 0;
+    left: 0;
+    width: 82px;
+    height: 82px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  #app.opened {
+    width: 434px;
+    box-shadow: 0 10px 30px #3a3b3b;
+  }
+  
+  .opened input.move-up {
+    margin-top: 0;
+  }
+  
+  .opened button {
+    color: #373d3f;
+    background-color: #fff;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  
+  #app.opened + #layer {
+    width: 4000px;
+    height: 4000px;
+    margin-top: -2000px;
+    opacity: 1;
+    z-index: 0;
+  }
+  
+  #app.opened ~ #init {
+    z-index: -1;
+  }
+  
+
+
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -100px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+  background-color: #FF0000;
+}
+
+#blog {
+  top: 80px;
+  background-color: #FF9900; /* Blue */
+}
+
+#projects {
+  top: 140px;
+  background-color: #00B140; /* Red */
+}
+
+#contact {
+  top: 200px;
+  background-color: #1A73E8; /* Light Black */
+}
+
+
+
+
+
+.full-screen-image {
+  width: 100%;
+  height: 100vh; /* 100vh faz com que a altura da imagem ocupe 100% da altura da tela */
+  object-fit: cover; /* Faz a imagem cobrir toda a área, mantendo a proporção */
+}
+
+
+
