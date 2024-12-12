@@ -85,3 +85,12 @@ body {
     position: absolute;
     padding-right: 70%;
 }
+
+.resize_na{
+  float: right;
+  height: 130px;
+  width: auto;
+  object-fit: cover;
+  position: absolute;
+  padding-left: 70%;
+}
