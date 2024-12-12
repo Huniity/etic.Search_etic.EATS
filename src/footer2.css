@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #f4f4f4;
+  min-height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 700px;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #000000;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+  color: white;
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #000000;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Geologica', sans-serif;
+}
+
+.menu__link:hover {
+  color: white;
+}
+
+.footer p {
+  color: #000000;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Geologica', sans-serif;
+}
+
+
+.resize_bw{
+    float: left;
+    height: 90px;
+    width: auto;
+    object-fit: cover;
+    position: absolute;
+    padding-right: 70%;
+}
+
+.resize_na{
+  float: right;
+  height: 130px;
+  width: auto;
+  object-fit: cover;
+  position: absolute;
+  padding-left: 70%;
+}
